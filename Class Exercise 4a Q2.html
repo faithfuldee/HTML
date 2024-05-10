@@ -1,0 +1,56 @@
+
+<!--Create a web page with two ‘panels’ (e.g., as divs): a side panel taking up roughly a quarter
+of the page width, and a main panel to the right filling the remaining width, with some border so the
+separation is visible. Place some links in the left panel, emulating a simple page layout with a sidebar.
+This is incomplete question 2-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Panel Layout</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        /* Style the panels */
+        .side-panel {
+            width: 25%; /* 25% of the page width */
+            float: left; /* Float left to stack the panels side by side */
+            border-right: 1px solid #ccc; /* Add a border on the right side */
+        }
+
+        .main-panel {
+            width: 75%; /* 75% of the page width */
+            float: left;
+            padding: 20px; /* Add some padding for content */
+            border-right: 1px solid #ccc;
+        }
+
+        /* Style the links in the side panel */
+        .side-panel a {
+            display: block; /* Display links as block elements for better spacing */
+            margin: 10px 0; /* Add some vertical margin between links */
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="side-panel">
+    <div class="panel-body">Side Panel</div>
+    <a href="Class Exercise 4a Q1.html">Link 1</a>
+    <a href="Class Exercise 4a Q2.html">Link 2</a>
+    <a href="Class Exercise 4a Q3 .html">Link 3</a>
+</div>
+
+<!-- This is the side of the main content which requires a a borders-->
+<div class="main-panel">
+    <h2>Main Panel</h2>
+    
+  </div>
+</body>
+</html>

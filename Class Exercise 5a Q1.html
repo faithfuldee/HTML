@@ -1,0 +1,54 @@
+<html>
+
+<head></head>
+<title> example css styles</title>
+<body>
+
+
+    <div id="container" ></div>
+   
+
+    <script>
+
+        var n1 = 5;
+        var n2 = 15;
+        var sum = n1 + n2
+
+
+
+/* document.write(sum)  // this is the change form console.log to document.write
+
+document.write(`${n1} + ${n2} = ${sum}`);
+
+document.write(`Sum is ${n1 + n2}`);*/
+
+
+
+if (sum % 2 == 0) {
+             console.log("even sum")
+            document.write("even sum")
+           
+
+
+        }
+        else {
+            document.write("odd sum")
+        }
+
+
+ var el = document.getElementById("container")
+
+
+// the innerHTML property allows us to overwrite
+//the contents inside the respctive element
+el.innerHTML = "<span> even sum</span>"
+
+// this prints out the element in console
+console.log(el);
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://moodle.kent.ac.uk/2023/pluginfile.php/347255/mod_label/intro/class5-question4.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Question 4</title>
+    <style type="text/css">
+        .box {
+            width: 5vw;
+            height: 5vw;
+            background: rgb(10, 200, 40);
+            float: left;
+            margin: 1vw;
+            padding: 1vw;
+            font-family: sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+    <script type="text/javascript">
+
+    //     // JavaScript for Part 3
+    //     var count = 2;
+
+
+    //     function spawnBox() {
+    //         // Get the container
+    //         var container = document.getElementById("container");
+
+    //         // Create a new element
+    //         var newBox = document.createElement("div");
+    //         newBox.className = "box";
+    //         newBox.innerHTML = count;
+
+    //         newBox.addEventListener('click', function () {
+    //             var currentNumber = parseInt(newBox.innerHTML);
+    //             newBox.innerHTML = currentNumber + 2;
+
+    //             // Increment the number immediately to the left (if it exists)
+    //             var previousSibling = newBox.previousElementSibling;
+    //             if (previousSibling) {
+    //                 var leftNumber = parseInt(previousSibling.innerHTML);
+    //                 previousSibling.innerHTML = leftNumber + 1;
+    //             }
+
+    //             // Increment the number immediately to the right (if it exists)
+    //             var nextSibling = newBox.nextElementSibling;
+    //             if (nextSibling) {
+    //                 var rightNumber = parseInt(nextSibling.innerHTML);
+    //                 nextSibling.innerHTML = rightNumber + 1;
+    //             }
+    //         });
+
+    //         container.appendChild(newBox);
+
+    //         count++;
+    //     }
+
+    function increment(box) {
+        let value = parsebox.innerHTML
+
+        alert("you clicked a box! its value is " + value)
+    }
+
+    function increment(clickedBox){
+
+        clickedBox.textContent = parseInt(clickedBox.textContent)+ 2;
+
+        var leftBox = clickedBox.previousElementSibling;
+        if(leftBox){
+            leftBox.textContent = parseInt(leftBox.textContent)+ 1;
+
+            var rightBox = clickedBox.previousElementSibling;
+        if(rightBox){
+            
+            rightBox.textContent = parseInt(rightBox.textContent)+ 1;
+        }
+    }
+}
+
+      
+        
+
+
+        
+    
+
+     
+
+
+    </script>
+    <style>
+        .box {
+            background: green;
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin:10px;
+        }
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <div id="container">
+        <div class="box" id="boxAlpha" onclick="increment(this)">0</div>
+        <div class="box" id="boxBeta" onclick="increment(this)">0</div>
+        <div class="box" id="boxGamma" onclick="increment(this)">0</div>
+        <div class="box" id="boxDelta" onclick="increment(this)">0</div>
+        <div class="box" id="boxEta" onclick="increment(this)">0</div>
+        <div class="box" id="boxLambda" onclick="increment(this)">0</div>
+    </div>
+</body>
+
+</html>

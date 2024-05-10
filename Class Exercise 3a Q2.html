@@ -1,0 +1,41 @@
+<head></head>
+<body>
+    
+    <title>Question 2 </title>
+    
+<!-- 2a. Create a short HTML file that contains the words ”Red Yellow Green Blue” where each word is styled
+in its colour (tip: use the span element to wrap each word). -->
+
+<span style="color:rgb(255,0,0)">Red</span>
+<span style="color:rgb(255,255,120)">Yellow</span>
+<span style="color:rgb(0,204,0)">Green</span>
+<span style="color:rgb(0,0,255)">Blue</span>
+</body>
+</html>
+
+<!--2b.Put the words in a ‘div’ element and style it so that the words are in a grey box with a dark border
+(experiment with the border style and thickness). Do not use any inline CSS (i.e., as an attribute) in
+your solution.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2</title>
+        <style>
+            .word-box {
+                background-color: grey;
+                border: 2px solid black;
+                padding: 10px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="word-box">
+            <span style="color:rgb(255,0,0)">Red</span>
+            <span style="color:rgb(255,255,120)">Yellow</span>
+            <span style="color:rgb(0,204,0)">Green</span>
+            <span style="color:rgb(0,0,255)">Blue</span>
+        </div>
+    </body>
+</html>

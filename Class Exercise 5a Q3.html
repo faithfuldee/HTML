@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0118)file:///c%3A/Users/Denisha/OneDrive/Desktop/Introduction%20to%20programming/HTML%20file/Class%20Exercise%204%20Q3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Colour Picker</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 16pt;
+    }
+
+  
+    /*#container div {
+      width: 4em;
+      height: 1.5em;
+      float: left;
+      padding: 1em;
+      margin: 1vw;
+      padding-top: 1.5em;
+      text-align: center;
+      transition: background 1s;
+    }*/
+
+   
+    #container  {
+      background: #8a2be2;
+      width: 100px;
+      height:100px;
+    }
+
+
+  </style>
+
+  <script type="text/javascript">
+const myElement = document.getElementById("colours");
+document.getElementById("colours").style.color = "green";
+document.getElementById("colours").style.color = "pink";
+document.getElementById("colours").style.color = "purple";
+
+  function generateColor(value) {
+    if(value == "green")
+    {
+      document.getElementById("container").style.backgroundColor = "Green"
+    }
+    
+    else if(value == "pink"){
+    
+      document.getElementById("container").style.backgroundColor = "Pink"
+    }
+    
+    else if(value == "purple"){
+    
+      document.getElementById("container").style.backgroundColor = "Purple"
+    }
+    
+    else if(value == "random"){
+      var r = Math.floor(Math.random() * 256);
+      var g = Math.floor(Math.random() * 256);
+      var b = Math.floor(Math.random() * 256);
+      var randomColor = "rgb(" + r + ", " + g + ", " + b + ")";
+      document.getElementById("container").style.backgroundColor = randomColor;
+    }
+   
+  }
+    
+
+
+  </script>
+</head>
+
+<body>
+
+  <span id="status">
+    Colour Fix
+  </span>
+  <br>
+
+  <select name="colours" onchange="generateColor(this.value)" id="colours">
+    <option value="select">Select</option>
+    <option value="green">Green</option>
+    <option value="pink">Pink</option>
+    <option value="purple">Purple</option>
+    <option value="random">Random</option>
+  </select>
+
+  <div id="container"> </div>
+
+
+
+</body></html>

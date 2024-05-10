@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Colour Picker</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 16pt;
+    }
+
+    #container div {
+      width: 4em;
+      height: 1.5em;
+      float: left;
+      padding: 1em;
+      margin: 1vw;
+      padding-top: 1.5em;
+      text-align: center;
+      transition: background 1s;
+    }
+
+    div.unselected {
+      background: #a0aeef;
+    }
+
+    div.selected,
+    #container div {
+      background: green;
+    }
+
+    
+    div.selected,
+    #container div {
+      background: pink;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+    function select(params) {
+      params.style.background=params.innerHTML;
+      
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <span id="status">
+    Sort these letters by choosing a pair to swap.
+  </span>
+  <br />
+
+  <div id="container">
+    <div class="unselected" onClick="select(this);">Green</div>
+    <div class="unselected" onClick="select(this);">Pink</div>
+    <div class="unselected" onClick="select(this);">Purple</div>
+
+  </div>
+
+</body>
+
+</html>
